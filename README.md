@@ -23,13 +23,14 @@ tags:
 | [WhisperKit/openai_whisper-large-v2_1050MB](https://huggingface.co/argmaxinc/whisperkit-coreml-staging/tree/main/WhisperKit/openai_whisper-large-v2_1050MB)             |  3.32 |      95   |             1050 |
 | [WhisperKit/openai_whisper-large-v2_turbo](https://huggingface.co/argmaxinc/whisperkit-coreml-staging/tree/main/WhisperKit/openai_whisper-large-v2_turbo)               |  3.24 |      96.6 |             3100 |
 | [WhisperKit/openai_whisper-large-v2_turbo_1022MB](https://huggingface.co/argmaxinc/whisperkit-coreml-staging/tree/main/WhisperKit/openai_whisper-large-v2_turbo_1022MB) |  3.33 |      94.9 |             1022 |
-| [whisper.cpp/openai_whisper-large-v2-q5_0](https://huggingface.co/argmaxinc/whisperkit-coreml-staging/tree/main/whisper.cpp/openai_whisper-large-v2-q5_0)               |  2.8  |      96.6 |             1080 |
 | [WhisperKit/openai_whisper-small](https://huggingface.co/argmaxinc/whisperkit-coreml-staging/tree/main/WhisperKit/openai_whisper-small)                                 |  3.98 |      82.9 |              483 |
 | [WhisperKit/openai_whisper-base](https://huggingface.co/argmaxinc/whisperkit-coreml-staging/tree/main/WhisperKit/openai_whisper-base)                                   |  6.11 |      67.1 |              145 |
 | [WhisperKit/openai_whisper-tiny](https://huggingface.co/argmaxinc/whisperkit-coreml-staging/tree/main/WhisperKit/openai_whisper-tiny)                                   |  8.94 |      52.4 |               66 |
 | [WhisperKit/openai_whisper-large-v3](https://huggingface.co/argmaxinc/whisperkit-coreml-staging/tree/main/WhisperKit/openai_whisper-large-v3)                           |  2.48 |      95.2 |             3100 |
 | [WhisperKit/openai_whisper-large-v3_turbo](https://huggingface.co/argmaxinc/whisperkit-coreml-staging/tree/main/WhisperKit/openai_whisper-large-v3_turbo)               |  2.44 |      95.4 |             3100 |
-| [openai_whisper-large-v3_turbo_1018MB](https://huggingface.co/argmaxinc/whisperkit-coreml-staging/tree/main/openai_whisper-large-v3_turbo_1018MB)                       |  2.49 |      94.8 |             1018 |
+| [WhisperKit/openai_whisper-large-v3_turbo_1018MB](https://huggingface.co/argmaxinc/whisperkit-coreml-staging/tree/main/WhisperKit/openai_whisper-large-v3_turbo_1018MB) |  2.49 |      94.8 |             1018 |
+| [whisper.cpp/openai_whisper-large-v2-q5_0](https://huggingface.co/argmaxinc/whisperkit-coreml-staging/tree/main/whisper.cpp/openai_whisper-large-v2-q5_0)               |  2.8  |      96.6 |             1080 |
+| [whisper.cpp/openai_whisper-large-v3-q5_0](https://huggingface.co/argmaxinc/whisperkit-coreml-staging/tree/main/whisper.cpp/openai_whisper-large-v3-q5_0)               |  2.35 |      95.6 |             1080 |
 
 
 ### Quality-of-Inference (QoI) Certification
