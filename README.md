@@ -19,31 +19,37 @@ tags:
 |                                                                                                                                                                            |   WER |   QoI (%) |   File Size (MB) |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------:|----------:|-----------------:|
 | [WhisperOpenAIAPI/openai_whisper-large-v2](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperOpenAIAPI/openai_whisper-large-v2/librispeech)               |  2.85 |     100   |             3100 |
+| [WhisperKit/openai_whisper-large-v3](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-large-v3/librispeech)                           |  2.48 |      95.2 |             3100 |
+| [WhisperKit/openai_whisper-large-v3_turbo](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-large-v3_turbo/librispeech)               |  2.44 |      95.4 |             3100 |
+| [WhisperKit/openai_whisper-large-v3_turbo_1018MB](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-large-v3_turbo_1018MB/librispeech) |  2.49 |      94.8 |             1018 |
 | [WhisperKit/openai_whisper-large-v2](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-large-v2/librispeech)                           |  3.28 |      96.6 |             3100 |
 | [WhisperKit/openai_whisper-large-v2_1050MB](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-large-v2_1050MB/librispeech)             |  3.32 |      95   |             1050 |
 | [WhisperKit/openai_whisper-large-v2_turbo](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-large-v2_turbo/librispeech)               |  3.24 |      96.6 |             3100 |
 | [WhisperKit/openai_whisper-large-v2_turbo_1022MB](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-large-v2_turbo_1022MB/librispeech) |  3.33 |      94.9 |             1022 |
+| [WhisperKit/openai_whisper-small.en](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-small.en/librispeech)                           |  4.31 |      85.9 |              483 |
 | [WhisperKit/openai_whisper-small](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-small/librispeech)                                 |  3.98 |      82.9 |              483 |
+| [WhisperKit/openai_whisper-base.en](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-base.en/librispeech)                             |  4.76 |      75.5 |              145 |
 | [WhisperKit/openai_whisper-base](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-base/librispeech)                                   |  6.11 |      67.1 |              145 |
+| [WhisperKit/openai_whisper-tiny.en](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-tiny.en/librispeech)                             |  6.72 |      64   |               66 |
 | [WhisperKit/openai_whisper-tiny](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-tiny/librispeech)                                   |  8.94 |      52.4 |               66 |
-| [WhisperKit/openai_whisper-large-v3](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-large-v3/librispeech)                           |  2.48 |      95.2 |             3100 |
-| [WhisperKit/openai_whisper-large-v3_turbo](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-large-v3_turbo/librispeech)               |  2.44 |      95.4 |             3100 |
-| [WhisperKit/openai_whisper-large-v3_turbo_1018MB](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-large-v3_turbo_1018MB/librispeech) |  2.49 |      94.8 |             1018 |
 
 
-### Quality-of-Inference (QoI) Certification
+### Explanation of Evaluation Metrics
 We believe that rigorously measuring the quality of inference is necessary for developers and
 enterprises to make informed decisions when opting to use optimized or compressed variants of
 any machine learning model in production. For WhisperKit, we take the following implementations
 and benchmark them using consistent evaluation harnesses:
 
-- `WhisperOpenAIAPI`: [OpenAI's Whisper API](https://platform.openai.com/docs/guides/speech-to-text)($0.36/hour as of 02/29/24, 25MB max file size)
+Server-side Implementations:
+- `WhisperOpenAIAPI`: [OpenAI's Whisper API](https://platform.openai.com/docs/guides/speech-to-text) ($0.36/hour as of 02/29/24, 25MB max file size)
+
+On-device Implementations:
 - `WhisperKit`: Argmax's Core ML implementation [[Eval Harness]](https://github.com/argmaxinc/whisperkittools/blob/main/whisperkit/pipelines.py#L100) [[Repo]](https://github.com/argmaxinc/WhisperKit)
 - `whisper.cpp`: A C++ implementation form ggerganov [[Eval Harness]](https://github.com/argmaxinc/whisperkittools/blob/main/whisperkit/pipelines.py#L212) [[Repo]](https://github.com/ggerganov/whisper.cpp)
 - `WhisperMLX`: A Python implementation from Apple MLX [[Eval Harness]](https://github.com/argmaxinc/whisperkittools/blob/main/whisperkit/pipelines.py#L338) [[Repo]](https://github.com/ml-explore/mlx-examples/blob/main/whisper/whisper/transcribe.py)
 
-`WhisperOpenAIAPI` is the reference and we assume that it is using the equivalent of
-[openai/whisper-large-v2](https://huggingface.co/openai/whisper-large-v2) in float16 precision.
+`WhisperOpenAIAPI` sets the reference and we assume that it is using the equivalent of [openai/whisper-large-v2](https://huggingface.co/openai/whisper-large-v2)
+in float16 precision along with additional undisclosed optimizations from OpenAI.
 In all measurements, we care primarily about per-example no-regressions (quantified as `qoi` below)
 which is a stricter metric compared to dataset average WER. A 100% `qoi` preserves perfect
 backwards-compatibility on the test distribution and avoids "perceived regressions", the phenomenon
@@ -59,9 +65,16 @@ for example in dataset:
 qoi = (sum(qoi) / len(qoi)) * 100.
 ```
 
-We use `librispeech/test.clean` (~5 hours of short English audio clips) and `earnings22` (~120 hours of long English audio clips with various accents).
+Note that the ordering of models with respect to `WER` does not match the ordering with respect to `QoI`. This is because the reference model gets assigned
+a QoI of 100% by definition. Any per-example regression by other implementations get penalized while per-example improvements are not rewarded. `QoI` (higher is better) matters
+where the production behavior is established by the reference results and `WER` (lower is better) matters when there is no established production behavior.
+
 We anticipate developers that use Whisper (or similar models) in production to have their own Quality Assurance test sets and whisperkittools offers
 the tooling necessary to run the same measurements on such custom test sets, please see the [Model Evaluation on Custom Dataset](#evaluate-on-custom-dataset) for details.
+
+### Datasets
+- [librispeech](https://huggingface.co/datasets/argmaxinc/librispeech): ~5 hours of short English audio clips, tests short-form transcription quality
+- [earnings22](https://huggingface.co/datasets/argmaxinc/earnings22): ~120 hours of English audio clips from earnings calls with various accents, tests long-form transcription quality
 
 ### Reproducing Results
 Results in this page are generated by our cluster of Apple Silicon Macs. We use them as self-hosted runners on
