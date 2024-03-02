@@ -15,8 +15,6 @@ tags:
 
 ## Dataset: `librispeech`
 
-### Quality Evaluation 
-
 |                                                                                                                                                                            |   WER |   QoI (%) |   File Size (MB) |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------:|----------:|-----------------:|
 | [WhisperOpenAIAPI/openai_whisper-large-v2](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperOpenAIAPI/openai_whisper-large-v2/librispeech)               |  2.85 |     100   |             3100 |
@@ -35,7 +33,7 @@ tags:
 | [WhisperKit/openai_whisper-tiny](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-tiny/librispeech)                                   |  8.94 |      52.4 |               66 |
 
 
-We believe that rigorously measuring the "quality of inference" is necessary for developers and
+We believe that rigorously measuring the quality of inference is necessary for developers and
 enterprises to make informed decisions when opting to use optimized or compressed variants of
 any machine learning model in production. To contextualize `WhisperKit`, we take the following Whisper
 implementations and benchmark them using a consistent evaluation harness:
