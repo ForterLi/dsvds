@@ -1,4 +1,18 @@
 
+---
+pretty_name: "WhisperKit ASR Evaluation Results"
+viewer: false
+tags:
+- whisper
+- whisperkit
+- coreml
+- asr
+- quantized
+---
+# WhisperKit Evaluation Results
+
+
+
 We believe that rigorously measuring the "quality of inference" is necessary for developers and
 enterprises to make informed decisions when opting to use optimized or compressed variants of
 any machine learning model in production. To contextualize `WhisperKit`, we take the following Whisper
@@ -44,20 +58,6 @@ Github Actions as our CI infrastructure. Due to [security concerns](https://docs
 we are unable to open up the cluster to the public. However, any Apple Silicon Mac (even with 8GB RAM) can be used to
 run identical [evaluation jobs](#evaluation) locally. For reference, our M2 Ultra devices complete a `librispeech` + `openai/whisper-large-v3`
 evaluation in under 1 hour regardless of the Whisper implementation. Older Apple Silicon Macs should take less than 1 day to complete the same evaluation.
-
-
-
----
-pretty_name: "WhisperKit ASR Evaluation Results"
-viewer: false
-tags:
-- whisper
-- whisperkit
-- coreml
-- asr
-- quantized
----
-# WhisperKit Evaluation Results
 
 
 
