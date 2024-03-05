@@ -25,12 +25,23 @@ tags:
 | [WhisperKit/openai_whisper-large-v2_1050MB](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-large-v2_1050MB/librispeech)             |  3.32 |      95   |             1050 |
 | [WhisperKit/openai_whisper-large-v2_turbo](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-large-v2_turbo/librispeech)               |  3.24 |      96.6 |             3100 |
 | [WhisperKit/openai_whisper-large-v2_turbo_1022MB](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-large-v2_turbo_1022MB/librispeech) |  3.33 |      94.9 |             1022 |
-| [WhisperKit/openai_whisper-small.en](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-small.en/librispeech)                           |  4.31 |      85.9 |              483 |
-| [WhisperKit/openai_whisper-small](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-small/librispeech)                                 |  3.98 |      82.9 |              483 |
-| [WhisperKit/openai_whisper-base.en](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-base.en/librispeech)                             |  4.76 |      75.5 |              145 |
-| [WhisperKit/openai_whisper-base](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-base/librispeech)                                   |  6.11 |      67.1 |              145 |
-| [WhisperKit/openai_whisper-tiny.en](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-tiny.en/librispeech)                             |  6.72 |      64   |               66 |
-| [WhisperKit/openai_whisper-tiny](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-tiny/librispeech)                                   |  8.94 |      52.4 |               66 |
+| [WhisperKit/openai_whisper-small.en](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-small.en/librispeech)                           |  4.14 |      85.8 |              483 |
+| [WhisperKit/openai_whisper-small](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-small/librispeech)                                 |  4.03 |      83   |              483 |
+| [WhisperKit/openai_whisper-base.en](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-base.en/librispeech)                             |  4.79 |      75.3 |              145 |
+| [WhisperKit/openai_whisper-base](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-base/librispeech)                                   |  6.14 |      67.2 |              145 |
+| [WhisperKit/openai_whisper-tiny.en](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-tiny.en/librispeech)                             |  6.76 |      63.9 |               66 |
+| [WhisperKit/openai_whisper-tiny](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-tiny/librispeech)                                   |  8.91 |      52.5 |               66 |
+| [whisper.cpp/openai_whisper-large-v3](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/whisper.cpp/openai_whisper-large-v3/librispeech)                         |  2.35 |      95.4 |             3100 |
+
+## Dataset: `earnings22`
+
+|                                                                                                                                                             |   WER |   QoI (%) |   File Size (MB) |
+|:------------------------------------------------------------------------------------------------------------------------------------------------------------|------:|----------:|-----------------:|
+| [WhisperOpenAIAPI/openai_whisper-large-v2](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperOpenAIAPI/openai_whisper-large-v2/earnings22) | 17.08 |     100   |             3100 |
+| [WhisperKit/openai_whisper-large-v3](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-large-v3/earnings22)             | 15.91 |      58.5 |             3100 |
+| [WhisperKit/openai_whisper-base.en](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-base.en/earnings22)               | 24.16 |       6.5 |              145 |
+| [WhisperKit/openai_whisper-tiny.en](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/WhisperKit/openai_whisper-tiny.en/earnings22)               | 29.36 |       5.7 |               66 |
+| [whisper.cpp/openai_whisper-large-v3](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/whisper.cpp/openai_whisper-large-v3/earnings22)           | 34.15 |       6.5 |             3100 |
 
 
 We believe that rigorously measuring the quality of inference is necessary for developers and
