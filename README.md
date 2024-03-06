@@ -8,7 +8,8 @@ tags:
 - coreml
 - asr
 - quantized
----
+- automatic-speech-recognition
+inference: false
 # WhisperKit Evaluation Results
 
 
