@@ -10,6 +10,7 @@ tags:
 - quantized
 - automatic-speech-recognition
 inference: false
+---
 # WhisperKit Evaluation Results
 
 
