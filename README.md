@@ -2,6 +2,7 @@
 ---
 pretty_name: "WhisperKit ASR Evaluation Results"
 viewer: false
+library_name: whisperkit
 tags:
 - whisper
 - whisperkit
