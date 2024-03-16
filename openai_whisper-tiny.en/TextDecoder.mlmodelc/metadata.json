@@ -112,9 +112,9 @@
         "hasShapeFlexibility" : "0",
         "isOptional" : "0",
         "dataType" : "Float16",
-        "formattedType" : "MultiArray (Float16 1 × 1536 × 1 × 448)",
+        "formattedType" : "MultiArray (Float16 1 × 1536 × 1 × 224)",
         "shortDescription" : "",
-        "shape" : "[1, 1536, 1, 448]",
+        "shape" : "[1, 1536, 1, 224]",
         "name" : "key_cache",
         "type" : "MultiArray"
       },
@@ -122,9 +122,9 @@
         "hasShapeFlexibility" : "0",
         "isOptional" : "0",
         "dataType" : "Float16",
-        "formattedType" : "MultiArray (Float16 1 × 1536 × 1 × 448)",
+        "formattedType" : "MultiArray (Float16 1 × 1536 × 1 × 224)",
         "shortDescription" : "",
-        "shape" : "[1, 1536, 1, 448]",
+        "shape" : "[1, 1536, 1, 224]",
         "name" : "value_cache",
         "type" : "MultiArray"
       },
@@ -132,9 +132,9 @@
         "hasShapeFlexibility" : "0",
         "isOptional" : "0",
         "dataType" : "Float16",
-        "formattedType" : "MultiArray (Float16 1 × 448)",
+        "formattedType" : "MultiArray (Float16 1 × 224)",
         "shortDescription" : "",
-        "shape" : "[1, 448]",
+        "shape" : "[1, 224]",
         "name" : "kv_cache_update_mask",
         "type" : "MultiArray"
       },
@@ -152,9 +152,9 @@
         "hasShapeFlexibility" : "0",
         "isOptional" : "0",
         "dataType" : "Float16",
-        "formattedType" : "MultiArray (Float16 1 × 448)",
+        "formattedType" : "MultiArray (Float16 1 × 224)",
         "shortDescription" : "",
-        "shape" : "[1, 448]",
+        "shape" : "[1, 224]",
         "name" : "decoder_key_padding_mask",
         "type" : "MultiArray"
       }
