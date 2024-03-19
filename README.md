@@ -15,7 +15,7 @@ tags:
 
 
 ## Dataset: `librispeech`
-(Short-form Audio (<30s/clip) - 5 hours of English audiobook clips)
+## Explanation: Short-form Audio (<30s/clip) - 5 hours of English audiobook clips
 
 |                                                                                                                                                                            |   WER (↓) |   QoI (↑) |   File Size (MB) |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------:|----------:|-----------------:|
@@ -36,7 +36,7 @@ tags:
 | [whisper.cpp/openai_whisper-large-v3](https://hf.co/datasets/argmaxinc/whisperkit-evals/tree/main/whisper.cpp/openai_whisper-large-v3/librispeech)                         |      1.97 |      95.4 |             3100 |
 
 ## Dataset: `earnings22`
-(Long-Form Audio (>1hr/clip) - 120 hours of earnings call recordings in English with various accents)
+## Explanation: Long-Form Audio (>1hr/clip) - 120 hours of earnings call recordings in English with various accents
 
 |                                                                                                                                                             |   WER (↓) |   QoI (↑) |   File Size (MB) |
 |:------------------------------------------------------------------------------------------------------------------------------------------------------------|----------:|----------:|-----------------:|
