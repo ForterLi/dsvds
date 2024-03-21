@@ -1,0 +1,27 @@
+program(1.0)
+[buildInfo = dict<tensor<string, []>, tensor<string, []>>({{"coremlc-component-MIL", "5.33.5"}, {"coremlc-version", "1877.40.3"}, {"coremltools-component-torch", "2.2.1"}, {"coremltools-source-dialect", "TorchScript"}, {"coremltools-version", "7.1"}})]
+{
+    func main<ios17>(tensor<int32, [1]> language, tensor<int32, [1]> task) {
+            tensor<int32, []> var_6 = const()[name = tensor<string, []>("op_6"), val = tensor<int32, []>(50259)];
+            tensor<int32, [1]> var_7 = sub(x = language, y = var_6)[name = tensor<string, []>("op_7")];
+            tensor<int32, []> var_8 = const()[name = tensor<string, []>("op_8"), val = tensor<int32, []>(2)];
+            tensor<int32, [1]> var_9 = mul(x = var_7, y = var_8)[name = tensor<string, []>("op_9")];
+            tensor<int32, [1]> input = add(x = var_9, y = task)[name = tensor<string, []>("input")];
+            tensor<int32, []> var_15_axis_0 = const()[name = tensor<string, []>("op_15_axis_0"), val = tensor<int32, []>(0)];
+            tensor<int32, []> var_15_batch_dims_0 = const()[name = tensor<string, []>("op_15_batch_dims_0"), val = tensor<int32, []>(0)];
+            tensor<bool, []> var_15_validate_indices_0 = const()[name = tensor<string, []>("op_15_validate_indices_0"), val = tensor<bool, []>(false)];
+            tensor<fp16, [198, 122880]> key_cache_lut_weight_to_fp16 = const()[name = tensor<string, []>("key_cache_lut_weight_to_fp16"), val = tensor<fp16, [198, 122880]>(BLOBFILE(path = tensor<string, []>("@model_path/weights/weight.bin"), offset = tensor<uint64, []>(64)))];
+            tensor<string, []> input_to_int16_dtype_0 = const()[name = tensor<string, []>("input_to_int16_dtype_0"), val = tensor<string, []>("int16")];
+            tensor<int16, [1]> cast_6 = cast(dtype = input_to_int16_dtype_0, x = input)[name = tensor<string, []>("cast_6")];
+            tensor<fp16, [1, 122880]> var_15_cast_fp16_cast_int16 = gather(axis = var_15_axis_0, batch_dims = var_15_batch_dims_0, indices = cast_6, validate_indices = var_15_validate_indices_0, x = key_cache_lut_weight_to_fp16)[name = tensor<string, []>("op_15_cast_fp16_cast_int16")];
+            tensor<int32, [4]> var_20 = const()[name = tensor<string, []>("op_20"), val = tensor<int32, [4]>([1, 40960, 1, 3])];
+            tensor<fp16, [1, 40960, 1, 3]> key_cache_prefill = reshape(shape = var_20, x = var_15_cast_fp16_cast_int16)[name = tensor<string, []>("op_21_cast_fp16")];
+            tensor<int32, []> var_25_axis_0 = const()[name = tensor<string, []>("op_25_axis_0"), val = tensor<int32, []>(0)];
+            tensor<int32, []> var_25_batch_dims_0 = const()[name = tensor<string, []>("op_25_batch_dims_0"), val = tensor<int32, []>(0)];
+            tensor<bool, []> var_25_validate_indices_0 = const()[name = tensor<string, []>("op_25_validate_indices_0"), val = tensor<bool, []>(false)];
+            tensor<fp16, [198, 122880]> value_cache_lut_weight_to_fp16 = const()[name = tensor<string, []>("value_cache_lut_weight_to_fp16"), val = tensor<fp16, [198, 122880]>(BLOBFILE(path = tensor<string, []>("@model_path/weights/weight.bin"), offset = tensor<uint64, []>(48660608)))];
+            tensor<fp16, [1, 122880]> var_25_cast_fp16_cast_int16 = gather(axis = var_25_axis_0, batch_dims = var_25_batch_dims_0, indices = cast_6, validate_indices = var_25_validate_indices_0, x = value_cache_lut_weight_to_fp16)[name = tensor<string, []>("op_25_cast_fp16_cast_int16")];
+            tensor<int32, [4]> var_30 = const()[name = tensor<string, []>("op_30"), val = tensor<int32, [4]>([1, 40960, 1, 3])];
+            tensor<fp16, [1, 40960, 1, 3]> value_cache_prefill = reshape(shape = var_30, x = var_25_cast_fp16_cast_int16)[name = tensor<string, []>("op_31_cast_fp16")];
+        } -> (key_cache_prefill, value_cache_prefill);
+}
