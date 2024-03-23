@@ -1,5 +1,5 @@
 program(1.0)
-[buildInfo = dict<tensor<string, []>, tensor<string, []>>({{"coremlc-component-MIL", "5.33.5"}, {"coremlc-version", "1877.40.3"}, {"coremltools-component-torch", "2.2.1"}, {"coremltools-source-dialect", "TorchScript"}, {"coremltools-version", "7.1"}})]
+[buildInfo = dict<tensor<string, []>, tensor<string, []>>({{"coremlc-component-MIL", "3304.5.2"}, {"coremlc-version", "3304.6.2"}, {"coremltools-component-torch", "2.2.1"}, {"coremltools-source-dialect", "TorchScript"}, {"coremltools-version", "7.1"}})]
 {
     func main<ios16>(tensor<fp16, [480000]> audio) {
             tensor<int32, [3]> var_10 = const()[name = tensor<string, []>("op_10"), val = tensor<int32, [3]>([1, 1, 480000])];
