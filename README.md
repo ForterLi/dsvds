@@ -10,7 +10,7 @@ tags:
 - asr
 - quantized
 ---
-# Whisper Transcription Quality
+# WhisperKit Transcription Quality
 
 
 
