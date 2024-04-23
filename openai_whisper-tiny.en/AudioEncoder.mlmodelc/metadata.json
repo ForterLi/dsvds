@@ -20,18 +20,16 @@
     "specificationVersion" : 7,
     "mlProgramOperationTypeHistogram" : {
       "Concat" : 28,
-      "Ios16.rsqrt" : 9,
-      "Ios16.mul" : 114,
+      "Ios16.add" : 9,
+      "Ios16.mul" : 96,
       "SliceByIndex" : 168,
-      "Ios16.sub" : 9,
       "Transpose" : 4,
+      "Ios16.batchNorm" : 9,
       "Ios16.einsum" : 192,
-      "Ios16.conv" : 26,
-      "Ios16.add" : 18,
-      "Ios16.reduceMean" : 18,
-      "Ios16.softmax" : 96,
       "Ios16.gelu" : 6,
-      "Ios16.batchNorm" : 9
+      "Ios16.softmax" : 96,
+      "Ios16.layerNorm" : 9,
+      "Ios16.conv" : 26
     },
     "computePrecision" : "Mixed (Float16, Int32)",
     "isUpdatable" : "0",
@@ -49,7 +47,7 @@
     "userDefinedMetadata" : {
       "com.github.apple.coremltools.source_dialect" : "TorchScript",
       "com.github.apple.coremltools.source" : "torch==2.2.2",
-      "com.github.apple.coremltools.version" : "7.1"
+      "com.github.apple.coremltools.version" : "7.2"
     },
     "inputSchema" : [
       {
