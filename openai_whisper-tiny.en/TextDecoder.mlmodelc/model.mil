@@ -1,5 +1,5 @@
 program(1.0)
-[buildInfo = dict<tensor<string, []>, tensor<string, []>>({{"coremlc-component-MIL", "3304.5.2"}, {"coremlc-version", "3304.6.2"}, {"coremltools-component-torch", "2.2.2"}, {"coremltools-source-dialect", "TorchScript"}, {"coremltools-version", "7.2"}})]
+[buildInfo = dict<tensor<string, []>, tensor<string, []>>({{"coremlc-component-MIL", "5.33.5"}, {"coremlc-version", "1877.40.3"}, {"coremltools-component-torch", "2.3.0"}, {"coremltools-source-dialect", "TorchScript"}, {"coremltools-version", "7.2"}})]
 {
     func main<ios16>(tensor<int32, [1]> cache_length, tensor<fp16, [1, 448]> decoder_key_padding_mask, tensor<fp16, [1, 384, 1, 1500]> encoder_output_embeds, tensor<int32, [1]> input_ids, tensor<fp16, [1, 1536, 1, 448]> key_cache, tensor<fp16, [1, 448]> kv_cache_update_mask, tensor<fp16, [1, 1536, 1, 448]> value_cache) {
             tensor<int32, []> var_24_axis_0 = const()[name = tensor<string, []>("op_24_axis_0"), val = tensor<int32, []>(0)];

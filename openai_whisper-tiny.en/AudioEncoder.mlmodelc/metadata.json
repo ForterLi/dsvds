@@ -46,7 +46,7 @@
     },
     "userDefinedMetadata" : {
       "com.github.apple.coremltools.source_dialect" : "TorchScript",
-      "com.github.apple.coremltools.source" : "torch==2.2.2",
+      "com.github.apple.coremltools.source" : "torch==2.3.0",
       "com.github.apple.coremltools.version" : "7.2"
     },
     "inputSchema" : [
